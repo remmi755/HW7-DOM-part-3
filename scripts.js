@@ -20,7 +20,7 @@ function creatElement(){
 body.addEventListener('click', function (event) {
     let target = event.target
 
-        if(target.tagName === 'BUTTON' && target.className === 'add-new-str' && inputUser.value !== '') {
+        if(target.tagName === 'BUTTON' && target.className === 'add-new-string' && inputUser.value !== '') {
             creatElement()
             inputUser.value = ''
         }
