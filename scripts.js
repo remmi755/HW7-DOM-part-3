@@ -7,19 +7,14 @@ function createItem(value) {
 
     return `<li class="li">${value}<button class="newBtn">${'Удалить'}</button></li>`
 }
-function createText(value) {
 
-    let list = ''
-    list = createItem(value)
-    return list
-}
 function clear(el){
     el.remove()
 }
 
 function creatElement(){
     elem = inputUser.value
-    ul.innerHTML += createText(elem)
+    ul.innerHTML += createItem(elem)
 }
 
 body.addEventListener('click', function (event) {
