@@ -12,7 +12,7 @@ function clear(el){
     el.remove()
 }
 
-function creatElement(){
+function addElement(){
     elem = inputUser.value
     ul.innerHTML += createItem(elem)
 }
@@ -21,7 +21,7 @@ body.addEventListener('click', function (event) {
     let target = event.target
 
         if(target.tagName === 'BUTTON' && target.className === 'add-new-string' && inputUser.value !== '') {
-            creatElement()
+            addElement()
             inputUser.value = ''
         }
 
